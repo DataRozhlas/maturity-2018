@@ -9,7 +9,6 @@ options: [] #wide, noheader (, nopic)
 ---
 
 <link rel="stylesheet" href="./styles/vopicikoule.css">
-<!-- link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" -->
 
 <div class="vopicikoule">
 

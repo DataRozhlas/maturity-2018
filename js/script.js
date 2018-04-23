@@ -30,6 +30,39 @@ function nactiVysledky() {
 		case 'Karlovarský':
 			nacist = 'kv';
 			break;
+		case 'Královéhradecký':
+			nacist = 'kh';
+			break;
+		case 'Liberecký':
+			nacist = 'lb';
+			break;
+		case 'Moravskoslezský':
+			nacist = 'ms';
+			break;
+		case 'Olomoucký':
+			nacist = 'ol';
+			break;
+		case 'Pardubický':
+			nacist = 'pb';
+			break;
+		case 'Praha':
+			nacist = 'pr';
+			break;
+		case 'Plzeňský':
+			nacist = 'pz';
+			break;
+		case 'Středočeský':
+			nacist = 'sc';
+			break;
+		case 'Ústecký':
+			nacist = 'us';
+			break;
+		case 'Vysočina':
+			nacist = 'vy';
+			break;
+		case 'Zlínský':
+			nacist = 'zl';
+			break;
 	}
 
 	nacist = './data/kraj/' + nacist + '.csv';
