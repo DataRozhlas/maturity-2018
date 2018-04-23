@@ -4,11 +4,11 @@ CSS soubory ve složce /styles/ se do výsledného článku zakompilují automat
 
 /* override nesmyslných stylů v redakčním systému */
 
-li {
+.vopicikoule li {
     background: none !important;
 }
 
-hr {
+.vopicikoule hr {
     max-width: none !important;
 }
 
