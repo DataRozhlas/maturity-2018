@@ -11,3 +11,12 @@ li {
 hr {
     max-width: none !important;
 }
+
+.postbutton {
+	display: inline;
+	margin-left: 5px;
+}
+
+.dropdown {
+	margin-bottom: 10px;
+}
