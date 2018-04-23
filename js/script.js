@@ -1,11 +1,13 @@
 var kraj, obor, skola, gdata;
 
+
+
 $().ready(function(){
 	$('#kraj a').click(function(){
 		event.preventDefault();
 		kraj = $(this).text();
 		document.getElementById("zvolenyKraj").innerHTML = kraj;
-		document.getElementById("krajButton").style.backgroundColor = "#4CAF50";
+		document.getElementById("krajButton").style.backgroundColor = "#4FBA8A";
 		document.getElementById("oborButton").style.backgroundColor = "#FFF";
 		document.getElementById("zvolenyObor").innerHTML = '';
 		document.getElementById("skolaButton").style.backgroundColor = "#FFF";
@@ -95,7 +97,7 @@ function nactiOborButton() {
 
 	obory = obory.filter(onlyUnique);
 
-	var text = '<button class="btn-lg btn-default dropdown-toggle" id="oborButton" type="button" data-toggle="dropdown">Obor'
+	var text = '<button class="btn-lg btn-default dropdown-toggle" id="oborButton" type="button" data-toggle="dropdown">Obor '
 	text += '<span class="caret"></span></button>'
 	text += '<p class="postbutton" id="zvolenyObor"></p>'
 	text += '<ul class="dropdown-menu" role="menu" aria-labelledby="menu1">'
@@ -112,7 +114,7 @@ function nactiOborButton() {
 		event.preventDefault();
 		obor = $(this).text();
 		document.getElementById("zvolenyObor").innerHTML = obor;
-		document.getElementById("oborButton").style.backgroundColor = "#4CAF50";
+		document.getElementById("oborButton").style.backgroundColor = "#4FBA8A";
 		document.getElementById("skolaButton").style.backgroundColor = "#FFF";
 		document.getElementById("zvolenaSkola").innerHTML = '';
 		nactiSkolaButton();
@@ -151,7 +153,7 @@ function nactiSkolaButton() {
 		event.preventDefault();
 		skola = $(this).text();
 		document.getElementById("zvolenaSkola").innerHTML = skola;
-		document.getElementById("skolaButton").style.backgroundColor = "#4CAF50";
+		document.getElementById("skolaButton").style.backgroundColor = "#4FBA8A";
 		zobrazVysledky();
 	});
 
@@ -176,7 +178,7 @@ function zobrazVysledky() {
 function makeTableHTML(myArray) {
 
 	var result = "<table border=1>";
-	result += "<tr><td>předmět</td><td>typ</td><td>volba</td><td>průměr</td><td>odchylka</td><td>konali</td><td>neuspěli</td></tr>";
+	result += "<tr><th>PŘEDMĚT</th><th>ZKOUŠKA</th><th>VOLBA PŘEDMĚTU</th><th>PRŮMĚRNÝ PERCENTIL</th><th>NEUSPĚLI</th></tr>";
 
 	for (var i=0; i < myArray.length; i++) {
 
@@ -186,29 +188,27 @@ function makeTableHTML(myArray) {
 
 		switch(true) {
 			case uspesnost < 20:
-				barva = '#d7191c';
+				barva = '#F84045';
 				break;
 			case uspesnost < 40:
-				barva = '#fdae61';
+				barva = '#FF7858';
 				break;
 			case uspesnost < 60:
-				barva = '#ffffbf';
+				barva = '#FFCE6D';
 				break;
 			case uspesnost < 80:
-				barva = '#a6d96a';
+				barva = '#4FBA8A';
 				break;
 			default:
-				barva = '#1a9641';
+				barva = '#18807A';
 		}
 
 		result += "<tr bgcolor=" + barva + ">";
 		result += "<td>" + myArray[i].predmet + "</td>";
 		result += "<td>" + myArray[i].typ + "</td>";
-		result += "<td>" + myArray[i].volba + "</td>";
-		result += "<td>" + myArray[i].prumer + "</td>";
-		result += "<td>" + myArray[i].odchylka + "</td>";
-		result += "<td>" + myArray[i].konali + "</td>";
-		result += "<td>" + myArray[i].neuspeli + "</td>";
+		result += "<td>" + myArray[i].volba + " %</td>";
+		result += "<td>" + myArray[i].prumer + ' ± ' + myArray[i].odchylka + "</td>";
+		result += "<td>" + myArray[i].neuspeli + ' z ' + myArray[i].konali + "</td>";
 		result += "</tr>";
 	}
 
@@ -222,16 +222,4 @@ function makeTableHTML(myArray) {
 
 function onlyUnique(value, index, self) {
 	return self.indexOf(value) === index;
-}
-
-
-
-
-function sleep(milliseconds) {
-  var start = new Date().getTime();
-  for (var i = 0; i < 1e7; i++) {
-    if ((new Date().getTime() - start) > milliseconds){
-      break;
-    }
-  }
 }

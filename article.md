@@ -10,7 +10,7 @@ options: [] #wide, noheader (, nopic)
 
 <link rel="stylesheet" href="./styles/vopicikoule.css">
 
-<div class="vopicikoule">
+<wide><div class="vopicikoule">
 
 <div class="dropdown" id="kraj">
   <button class="btn-lg btn-default dropdown-toggle" id="krajButton" type="button" data-toggle="dropdown">Kraj
@@ -20,6 +20,17 @@ options: [] #wide, noheader (, nopic)
     <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Jihočeský</a></li>
     <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Jihomoravský</a></li>
     <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Karlovarský</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Královéhradecký</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Liberecký</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Moravskoslezský</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Olomoucký</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Pardubický</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Praha</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Plzeňský</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Středočeský</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Ústecký</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Vysočina</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Zlínský</a></li>
   </ul>
 </div>
 
@@ -37,10 +48,7 @@ options: [] #wide, noheader (, nopic)
   <ul class="dropdown-menu" role="menu" aria-labelledby="menu1"></ul>
 </div>
 
-</div>
+</div></wide>
 
-<wide>
-	<div id="tabulka"></div>
-</wide>
+<wide><div id="tabulka"></div></wide>
 
-XXX
