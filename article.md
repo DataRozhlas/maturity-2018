@@ -10,6 +10,8 @@ options: [] #wide, noheader (, nopic)
 
 <link rel="stylesheet" href="./styles/vopicikoule.css">
 
+<wide><h3>Vyberte školu</h3></wide>
+
 <wide><div class="vopicikoule">
 
 <div class="dropdown" id="kraj">
@@ -52,4 +54,4 @@ options: [] #wide, noheader (, nopic)
 
 <wide><div id="tabulka"></div></wide>
 
-<wide><img src="https://dev.datarozhlas.cz/maturity-2018/images/legenda-small.png" id="legenda" style="max-width: 100%; visibility: hidden;"></wide>
+<wide><div id="legenda" style="visibility: hidden;"><img src="https://dev.datarozhlas.cz/maturity-2018/images/legenda-small.png" style="max-width: 100%; float: left; margin-right: 20px">_Tady nějaký vysvětlení, co je průměrný percentil, co ta tabulka vlastně ukazuje, co spíš ne a kde jsme vzali data. Tady nějaký vysvětlení, co je průměrný percentil, co ta tabulka vlastně ukazuje, co spíš ne a kde jsme vzali data. Tady nějaký vysvětlení, co je průměrný percentil, co ta tabulka vlastně ukazuje, co spíš ne a kde jsme vzali data. Tady nějaký vysvětlení, co je průměrný percentil, co ta tabulka vlastně ukazuje, co spíš ne a kde jsme vzali data. Tady nějaký vysvětlení, co je průměrný percentil, co ta tabulka vlastně ukazuje, co spíš ne a kde jsme vzali data._</div></wide>
