@@ -42,3 +42,5 @@ options: [] #wide, noheader (, nopic)
 <wide>
 	<div id="tabulka"></div>
 </wide>
+
+XXX
