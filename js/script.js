@@ -36,7 +36,6 @@ $().ready(function(){
 	});
 });
 
-
 function nactiVysledky() {
 
 	var nacist;
@@ -53,7 +52,7 @@ function nactiVysledky() {
 			break;
 	}
 
-	nacist = '/data/kraj/' + nacist + '.csv';
+	nacist = './data/kraj/' + nacist + '.csv';
 
 	d3.csv(nacist, function(data) {
 
@@ -83,7 +82,10 @@ function nactiSkoly() {
 
 	skoly = skoly.filter(onlyUnique);
 
-	var text = '<ul class="dropdown-menu" role="menu" aria-labelledby="menu1">'
+	var text = '<button class="btn-lg btn-default dropdown-toggle" id="skolaButton" type="button" data-toggle="dropdown">Škola'
+	text += '<span class="caret"></span></button>'
+	text += '<p class="postbutton" id="zvolenaSkola"></p>'
+	text += '<ul class="dropdown-menu" role="menu" aria-labelledby="menu1">'
 
 	for (var i=0; i < skoly.length; i++) {
 		text += '<li role="presentation"><a role="menuitem" tabindex="-1" href="#">' + skoly[i] + '</a></li>'
@@ -91,13 +93,13 @@ function nactiSkoly() {
 
 	text += '</ul>'
 
-	document.getElementById("zvolenaSkola").innerHTML = text;
+	document.getElementById("skola").innerHTML = text;
 }
 
 function zobrazVysledky() {
 
 	var skoly =  gdata.filter(function(x) {
-		return x.obor == obor;
+		return ((x.obor == obor) && (x.skola == skola));
 	});
 
 	var text = makeTableHTML(skoly);
@@ -109,7 +111,7 @@ function zobrazVysledky() {
 function makeTableHTML(myArray) {
 
 	var result = "<table border=1>";
-	result += "<tr><td>škola</td><td>předmět</td><td>typ</td><td>volba</td><td>průměr</td><td>odchylka</td><td>konali</td><td>neuspěli</td></tr>";
+	result += "<tr><td>předmět</td><td>typ</td><td>volba</td><td>průměr</td><td>odchylka</td><td>konali</td><td>neuspěli</td></tr>";
 
 	for (var i=0; i < myArray.length; i++) {
 
@@ -135,7 +137,6 @@ function makeTableHTML(myArray) {
 		}
 
 		result += "<tr bgcolor=" + barva + ">";
-		result += "<td>" + myArray[i].skola + "</td>";
 		result += "<td>" + myArray[i].predmet + "</td>";
 		result += "<td>" + myArray[i].typ + "</td>";
 		result += "<td>" + myArray[i].volba + "</td>";

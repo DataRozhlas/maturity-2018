@@ -37,6 +37,7 @@ options: [] #wide, noheader (, nopic)
   <button class="btn-lg btn-default dropdown-toggle" id="skolaButton" type="button" data-toggle="dropdown">Škola
   <span class="caret"></span></button>
   <p class="postbutton" id="zvolenaSkola"></p>
+  <ul class="dropdown-menu" role="menu" aria-labelledby="menu1"></ul>
 </div>
 
 </div>
