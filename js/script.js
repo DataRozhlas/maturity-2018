@@ -171,6 +171,8 @@ function zobrazVysledky() {
 
 	document.getElementById("tabulka").innerHTML = text;
 
+	document.getElementById("legenda").style.visibility = "visible";
+
 };
 
 

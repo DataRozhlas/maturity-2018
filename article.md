@@ -52,3 +52,4 @@ options: [] #wide, noheader (, nopic)
 
 <wide><div id="tabulka"></div></wide>
 
+<div><img src="https://dev.datarozhlas.cz/maturity-2018/images/legenda.png" id="legenda" style="max-width: 100%; visibility: hidden;"></div>

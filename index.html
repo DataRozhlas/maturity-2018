@@ -301,6 +301,7 @@
 
 <p></div></div><div class="row-main row-main--narrow"></p>
 <p></div><div class="row-main row-main--article"><div id="tabulka"></div></div><div class="row-main row-main--narrow"></p>
+<div><img src="https://dev.datarozhlas.cz/maturity-2018/images/legenda.png" id="legenda" style="max-width: 100%; visibility: hidden;"></div>
 
 <p class="meta meta--right meta--big">
 <!--[[ZPRAVY_SNOWFALL_AUTHORS:FOOTER]]-->
@@ -325,7 +326,7 @@ text+='<p class="postbutton" id="zvolenaSkola"></p>'
 text+='<ul class="dropdown-menu" role="menu" aria-labelledby="menu1">'
 for(var i=0;i<skoly.length;i++){text+='<li role="presentation"><a role="menuitem" tabindex="-1" href="#">'+skoly[i]+'</a></li>'}
 text+='</ul>'
-document.getElementById("skola").innerHTML=text;$('#skola a').click(function(){event.preventDefault();skola=$(this).text();document.getElementById("zvolenaSkola").innerHTML=skola;document.getElementById("skolaButton").style.backgroundColor="#4FBA8A";zobrazVysledky();});};function zobrazVysledky(){var skoly=gdata.filter(function(x){return((x.obor==obor)&&(x.skola==skola));});var text=makeTableHTML(skoly);document.getElementById("tabulka").innerHTML=text;};function makeTableHTML(myArray){var result="<table border=1>";result+="<tr><th>PŘEDMĚT</th><th>ZKOUŠKA</th><th>VOLBA PŘEDMĚTU</th><th>PRŮMĚRNÝ PERCENTIL</th><th>NEUSPĚLI</th></tr>";for(var i=0;i<myArray.length;i++){var uspesnost=myArray[i].prumer;var barva;switch(true){case uspesnost<20:barva='#F84045';break;case uspesnost<40:barva='#FF7858';break;case uspesnost<60:barva='#FFCE6D';break;case uspesnost<80:barva='#4FBA8A';break;default:barva='#18807A';}
+document.getElementById("skola").innerHTML=text;$('#skola a').click(function(){event.preventDefault();skola=$(this).text();document.getElementById("zvolenaSkola").innerHTML=skola;document.getElementById("skolaButton").style.backgroundColor="#4FBA8A";zobrazVysledky();});};function zobrazVysledky(){var skoly=gdata.filter(function(x){return((x.obor==obor)&&(x.skola==skola));});var text=makeTableHTML(skoly);document.getElementById("tabulka").innerHTML=text;document.getElementById("legenda").style.visibility="visible";};function makeTableHTML(myArray){var result="<table border=1>";result+="<tr><th>PŘEDMĚT</th><th>ZKOUŠKA</th><th>VOLBA PŘEDMĚTU</th><th>PRŮMĚRNÝ PERCENTIL</th><th>NEUSPĚLI</th></tr>";for(var i=0;i<myArray.length;i++){var uspesnost=myArray[i].prumer;var barva;switch(true){case uspesnost<20:barva='#F84045';break;case uspesnost<40:barva='#FF7858';break;case uspesnost<60:barva='#FFCE6D';break;case uspesnost<80:barva='#4FBA8A';break;default:barva='#18807A';}
 result+="<tr bgcolor="+barva+">";result+="<td>"+myArray[i].predmet+"</td>";result+="<td>"+myArray[i].typ+"</td>";result+="<td>"+myArray[i].volba+" %</td>";result+="<td>"+myArray[i].prumer+' ± '+myArray[i].odchylka+"</td>";result+="<td>"+myArray[i].neuspeli+' z '+myArray[i].konali+"</td>";result+="</tr>";}
 result+="</table>";return result;};function onlyUnique(value,index,self){return self.indexOf(value)===index;}</script>
 
