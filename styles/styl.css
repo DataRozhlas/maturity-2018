@@ -12,11 +12,11 @@ hr {
     max-width: none !important;
 }
 
-.postbutton {
+.vopicikoule .postbutton {
 	display: inline;
 	margin-left: 5px;
 }
 
-.dropdown {
+.vopicikoule .dropdown {
 	margin-bottom: 10px;
 }

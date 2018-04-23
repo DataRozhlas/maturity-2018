@@ -8,9 +8,10 @@ libraries: [jquery, "https://d3js.org/d3.v3.min.js", "https://maxcdn.bootstrapcd
 options: [] #wide, noheader (, nopic)
 ---
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="./styles/vopicikoule.css">
+<!-- link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" -->
 
-<div class="container">
+<div class="vopicikoule">
 
 <div class="dropdown" id="kraj">
   <button class="btn-lg btn-default dropdown-toggle" id="krajButton" type="button" data-toggle="dropdown">Kraj
@@ -27,10 +28,7 @@ options: [] #wide, noheader (, nopic)
   <button class="btn-lg btn-default dropdown-toggle" id="oborButton" type="button" data-toggle="dropdown">Obor
   <span class="caret"></span></button>
   <p class="postbutton" id="zvolenyObor"></p>
-  <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Gymnázium 4 leté</a></li>
-    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Gymnázium 8 leté</a></li>
-  </ul>
+  <ul class="dropdown-menu" role="menu" aria-labelledby="menu1"></ul>
 </div>
 
 <div class="dropdown" id="skola">

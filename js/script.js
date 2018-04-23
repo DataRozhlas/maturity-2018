@@ -14,27 +14,7 @@ $().ready(function(){
 	});
 });
 
-$().ready(function(){
-	$('#obor a').click(function(){
-		event.preventDefault();
-		obor = $(this).text();
-		document.getElementById("zvolenyObor").innerHTML = obor;
-		document.getElementById("oborButton").style.backgroundColor = "#4CAF50";
-		document.getElementById("skolaButton").style.backgroundColor = "#FFF";
-		document.getElementById("zvolenaSkola").innerHTML = '';
-		nactiSkoly();
-	});
-});
 
-$().ready(function(){
-	$('#skola a').click(function(){
-		event.preventDefault();
-		skola = $(this).text();
-		document.getElementById("zvolenaSkola").innerHTML = skola;
-		document.getElementById("skolaButton").style.backgroundColor = "#4CAF50";
-		zobrazVysledky();
-	});
-});
 
 function nactiVysledky() {
 
@@ -66,11 +46,50 @@ function nactiVysledky() {
 
 		gdata = data;
 
+		nactiOborButton();
+
 	});
 
 };
 
-function nactiSkoly() {
+
+
+function nactiOborButton() {
+
+	var obory = gdata.map(function(d) {
+		return d.obor;
+	});
+
+	obory = obory.filter(onlyUnique);
+
+	var text = '<button class="btn-lg btn-default dropdown-toggle" id="oborButton" type="button" data-toggle="dropdown">Obor'
+	text += '<span class="caret"></span></button>'
+	text += '<p class="postbutton" id="zvolenyObor"></p>'
+	text += '<ul class="dropdown-menu" role="menu" aria-labelledby="menu1">'
+
+	for (var i=0; i < obory.length; i++) {
+		text += '<li role="presentation"><a role="menuitem" tabindex="-1" href="#">' + obory[i] + '</a></li>'
+	}
+
+	text += '</ul>'
+
+	document.getElementById("obor").innerHTML = text;
+
+	$('#obor a').click(function(){
+		event.preventDefault();
+		obor = $(this).text();
+		document.getElementById("zvolenyObor").innerHTML = obor;
+		document.getElementById("oborButton").style.backgroundColor = "#4CAF50";
+		document.getElementById("skolaButton").style.backgroundColor = "#FFF";
+		document.getElementById("zvolenaSkola").innerHTML = '';
+		nactiSkolaButton();
+	});
+
+};
+
+
+
+function nactiSkolaButton() {
 
 	var skoly = gdata.filter(function(x) {
 		return x.obor == obor;
@@ -94,7 +113,18 @@ function nactiSkoly() {
 	text += '</ul>'
 
 	document.getElementById("skola").innerHTML = text;
-}
+
+	$('#skola a').click(function(){
+		event.preventDefault();
+		skola = $(this).text();
+		document.getElementById("zvolenaSkola").innerHTML = skola;
+		document.getElementById("skolaButton").style.backgroundColor = "#4CAF50";
+		zobrazVysledky();
+	});
+
+};
+
+
 
 function zobrazVysledky() {
 
@@ -107,6 +137,8 @@ function zobrazVysledky() {
 	document.getElementById("tabulka").innerHTML = text;
 
 };
+
+
 
 function makeTableHTML(myArray) {
 
@@ -153,6 +185,20 @@ function makeTableHTML(myArray) {
 
 };
 
+
+
 function onlyUnique(value, index, self) {
 	return self.indexOf(value) === index;
+}
+
+
+
+
+function sleep(milliseconds) {
+  var start = new Date().getTime();
+  for (var i = 0; i < 1e7; i++) {
+    if ((new Date().getTime() - start) > milliseconds){
+      break;
+    }
+  }
 }
