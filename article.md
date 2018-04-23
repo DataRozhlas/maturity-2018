@@ -1,7 +1,7 @@
 title: "Co se na poslední chvíli doučit? Podívejte se, jak dopadly státní maturity na vaší škole loni"
 perex: ""
 published: "25. dubna 2018"
-coverimg: https://www.flickr.com/photos/tomfbh/171221712/in/photolist-g8yfu-9i1Dc1-23iDjDQ-5d4we-2RcEL-Badpy-cP3UA-jDp1m-qc293N-r8WK61-fZcrp-78HdFm-7EjrEh-g8y9Z-5tm1wP-qRAYXR-jDps6-2UN3v-M3sWE-898NTe-9zrTwZ-pVRbFF-qp65co-FhsQVJ-24qyi5-pDAjMe-24Ub82M-TthpCb-4XC9u4-J6Zj79-T8agGd-TthoVE-TthpyJ-GmYV9v-Stm2Ez-T8agqG-fcBto-7ktnvv-6tjjRP-6MDH78-25ziWyc-eBWbNx-G6kpF7-cEJya3-5gYuK7-ceLocU-317AA-r8WNq7-g8yc4-wUizi
+coverimg: https://dev.datarozhlas.cz/maturity-2018/images/flickrnda.jpg
 coverimg_note: ""
 styles: []
 libraries: [jquery, "https://d3js.org/d3.v3.min.js", "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"]
