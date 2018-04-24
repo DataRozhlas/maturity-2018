@@ -61,7 +61,7 @@ function nactiVysledky() {
 			break;
 	}
 
-	nacist = './data/kraj/' + nacist + '.csv';
+	nacist = 'https://dev.datarozhlas.cz/maturity-2018/data/kraj/' + nacist + '.csv';
 
 	d3.csv(nacist).then(function(data) {
 
