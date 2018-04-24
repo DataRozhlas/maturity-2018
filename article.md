@@ -54,4 +54,14 @@ options: [] #wide, noheader (, nopic)
 
 <wide><div id="tabulka"></div></wide>
 
-<wide><div id="legenda" style="visibility: hidden;"><img src="https://dev.datarozhlas.cz/maturity-2018/images/legenda-small.png" style="max-width: 100%; float: left; margin-right: 20px">_Tady nějaký vysvětlení, co je průměrný percentil, co ta tabulka vlastně ukazuje, co spíš ne a kde jsme vzali data. Tady nějaký vysvětlení, co je průměrný percentil, co ta tabulka vlastně ukazuje, co spíš ne a kde jsme vzali data. Tady nějaký vysvětlení, co je průměrný percentil, co ta tabulka vlastně ukazuje, co spíš ne a kde jsme vzali data. Tady nějaký vysvětlení, co je průměrný percentil, co ta tabulka vlastně ukazuje, co spíš ne a kde jsme vzali data. Tady nějaký vysvětlení, co je průměrný percentil, co ta tabulka vlastně ukazuje, co spíš ne a kde jsme vzali data._</div></wide>
+<wide><div id="legenda" style="visibility: hidden;"><img src="https://dev.datarozhlas.cz/maturity-2018/images/legenda-small.png" style="max-width: 100%; float: left; margin-right: 20px">_Percentil udává úspěšnost mezi všemi studenty, kteří dělali stejný test._ PRŮMĚRNÝ PERCENTIL _podobně říká, jaká je pozice dané školy mezi školami v oboru (například studentů čtyřletého gymnázia na dané škole mezi všemi studenty čtyřletých gymnázií). Číslo za percentilem udává rozptyl mezi studenty, kteří zkoušku dělali._
+
+_V rámci státních maturit je povinná pouze zkouška z češtiny a jednoho dalšího předmětu: na výběr je matematika, angličtina, němčina, francouzština, španělština a ruština._ VOLBA PŘEDMĚTU _ukazuje, jaká část studentů si vybrala konkrétní předmět. Právě podíl studentů, kteří si předmět vybrali, znemožňuje jednoduché srovnání škol: u srovnatelně kvalitních škol bude mít pravděpodobně lepší výsledek ta, kde se pro zkoušku rozhodne menší část talentovanějších a lépe připravených studentů._
+
+_S výjimkou matematiky se maturitní zkouška z předmětu skládá z didaktického testu, písemné práce a ústní zkoušky. O kterou jde, označuje sloupoec_ ZKOUŠKA. _Každá část se hodnotí zvlášť, proto každou najdete v samostatném řádku. Neúspěch u jedné části znamená neúspěch maturity, nicméně stačí opravit právě tuhle část._
+
+_Sloupec_ NEUSPĚLI _říká, kolik studentů zkoušku konalo a kolik ji nezvládlo._
+
+_Zdroj dat: [Cermat](https://vysledky.cermat.cz/data/Default.aspx)_
+
+</div></wide>
