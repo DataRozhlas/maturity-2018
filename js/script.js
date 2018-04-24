@@ -1,20 +1,16 @@
 var kraj, obor, skola, gdata;
 
-$().ready(function(){
-	$('#kraj a').click(function(event){
-		event.preventDefault();
-		kraj = $(this).text();
-		document.getElementById("zvolenyKraj").innerHTML = kraj;
-		document.getElementById("krajButton").style.backgroundColor = "#4FBA8A";
-		document.getElementById("oborButton").style.backgroundColor = "#FFF";
-		document.getElementById("zvolenyObor").innerHTML = '';
-		document.getElementById("skolaButton").style.backgroundColor = "#FFF";
-		document.getElementById("zvolenaSkola").innerHTML = '';
-		nactiVysledky();
-	});
+$('#kraj a').click(function(event){
+	event.preventDefault();
+	kraj = $(this).text();
+	document.getElementById("zvolenyKraj").innerHTML = kraj;
+	document.getElementById("krajButton").style.backgroundColor = "#4FBA8A";
+	document.getElementById("oborButton").style.backgroundColor = "#FFF";
+	document.getElementById("zvolenyObor").innerHTML = '';
+	document.getElementById("skolaButton").style.backgroundColor = "#FFF";
+	document.getElementById("zvolenaSkola").innerHTML = '';
+	nactiVysledky();
 });
-
-
 
 function nactiVysledky() {
 

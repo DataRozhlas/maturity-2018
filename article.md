@@ -4,11 +4,9 @@ published: "25. dubna 2018"
 coverimg: https://dev.datarozhlas.cz/maturity-2018/images/flickrnda.jpg
 coverimg_note: ""
 styles: []
-libraries: [jquery, "https://d3js.org/d3.v3.min.js", "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"]
+libraries: [jquery, "https://d3js.org/d3.v3.min.js"]
 options: [] #wide, noheader (, nopic)
 ---
-
-<link rel="stylesheet" href="./styles/vopicikoule.css">
 
 <wide><h3>Vyberte školu</h3></wide>
 
