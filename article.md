@@ -8,9 +8,10 @@ libraries: [jquery, "https://d3js.org/d3-dsv.v1.min.js", "https://d3js.org/d3-fe
 options: [] #wide, noheader (, nopic)
 ---
 
-<wide><h3>Vyberte školu</h3></wide>
+<wide>
+<h3>Vyberte školu</h3>
 
-<wide><div class="vopicikoule">
+<div class="vopicikoule">
 
 <div class="dropdown" id="kraj">
   <button class="btn-lg btn-default dropdown-toggle" id="krajButton" type="button" data-toggle="dropdown">Kraj
@@ -48,11 +49,12 @@ options: [] #wide, noheader (, nopic)
   <ul class="dropdown-menu" role="menu" aria-labelledby="menu1"></ul>
 </div>
 
-</div></wide>
+</div>
 
-<wide><div id="tabulka"></div></wide>
+<div id="tabulka"></div>
 
-<wide><div id="legenda" style="visibility: hidden;"><img src="https://dev.datarozhlas.cz/maturity-2018/images/legenda-small.png" style="max-width: 100%; float: left; margin-right: 20px">_Percentil udává úspěšnost mezi všemi studenty, kteří dělali stejný test._ PRŮMĚRNÝ PERCENTIL _podobně říká, jak úspěšní byli studenti dané školy v porovnání se studenty jiných škol. Číslo za percentilem udává rozptyl mezi studenty, kteří zkoušku dělali._
+&nbsp;<div id="legenda" style="visibility: hidden;"><img src="https://dev.datarozhlas.cz/maturity-2018/images/legenda-small.png" style="max-width: 100%; float: left; margin-right: 20px">
+_Percentil udává úspěšnost mezi všemi studenty, kteří dělali stejný test._ PRŮMĚRNÝ PERCENTIL _podobně říká, jak úspěšní byli studenti dané školy v porovnání se studenty jiných škol. Číslo za percentilem udává rozptyl mezi studenty, kteří zkoušku dělali._
 
 _V rámci státních maturit je povinná pouze zkouška z češtiny a jednoho dalšího předmětu: na výběr je matematika, angličtina, němčina, francouzština, španělština a ruština._ ZVOLILO _ukazuje, jaká část studentů si vybrala konkrétní předmět. Právě podíl studentů, kteří si předmět vybrali, znemožňuje jednoduché srovnání škol: u srovnatelně kvalitních škol bude mít pravděpodobně lepší výsledek ta, kde se pro zkoušku rozhodne menší část talentovanějších a lépe připravených studentů._
 
