@@ -174,7 +174,7 @@ function zobrazVysledky() {
 function makeTableHTML(myArray) {
 
 	var result = "<table border=1>";
-	result += "<tr><th>PŘEDMĚT</th><th>ZKOUŠKA</th><th>VOLBA PŘEDMĚTU</th><th>PRŮMĚRNÝ PERCENTIL</th><th>NEUSPĚLI</th></tr>";
+	result += "<tr><th>PŘEDMĚT</th><th>ZKOUŠKA</th><th>ZVOLILO</th><th>PRŮMĚRNÝ PERCENTIL</th><th>NEUSPĚLI</th></tr>";
 
 	for (var i=0; i < myArray.length; i++) {
 

@@ -1,14 +1,10 @@
-/*
-CSS soubory ve složce /styles/ se do výsledného článku zakompilují automaticky
-*/
-
 /* override nesmyslných stylů v redakčním systému */
 
-.vopicikoule li {
+li {
     background: none !important;
 }
 
-.vopicikoule hr {
+hr {
     max-width: none !important;
 }
 
@@ -35,8 +31,8 @@ CSS soubory ve složce /styles/ se do výsledného článku zakompilují automat
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	border-color: #ccc;
     border-radius: 6px;
-    border-width: 2px;
-}
+    border-width: 2px; 
+}     
 
 #tabulka th {
 	background-color: #333;
@@ -45,4 +41,16 @@ CSS soubory ve složce /styles/ se do výsledného článku zakompilují automat
 
 #tabulka th, td {
 	padding: 5px;
+}
+
+@media only screen and (max-width: 450px) {
+    #tabulka {
+        transform: scale(0.75,0.75);
+        transform-origin: 0% 0%;
+        margin-left: -10px;
+    }
+
+    #legenda {
+        margin-top: -150px;
+    }
 }
