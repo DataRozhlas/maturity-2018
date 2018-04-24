@@ -63,7 +63,7 @@ function nactiVysledky() {
 
 	nacist = './data/kraj/' + nacist + '.csv';
 
-	d3.csv(nacist, function(data) {
+	d3.csv(nacist).then(function(data) {
 
 		data.forEach(function(d) {
 			d.konali = +d.konali;
@@ -157,7 +157,7 @@ function nactiSkolaButton() {
 
 function zobrazVysledky() {
 
-	var skoly =  gdata.filter(function(x) {
+	var skoly = gdata.filter(function(x) {
 		return ((x.obor == obor) && (x.skola == skola));
 	});
 

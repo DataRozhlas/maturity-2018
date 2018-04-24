@@ -4,7 +4,7 @@ published: "25. dubna 2018"
 coverimg: https://dev.datarozhlas.cz/maturity-2018/images/flickrnda.jpg
 coverimg_note: ""
 styles: []
-libraries: [jquery, "https://d3js.org/d3.v3.min.js"]
+libraries: [jquery, "https://d3js.org/d3-dsv.v1.min.js", "https://d3js.org/d3-fetch.v1.min.js"]
 options: [] #wide, noheader (, nopic)
 ---
 
