@@ -1,9 +1,7 @@
 var kraj, obor, skola, gdata;
 
-
-
 $().ready(function(){
-	$('#kraj a').click(function(){
+	$('#kraj a').click(function(event){
 		event.preventDefault();
 		kraj = $(this).text();
 		document.getElementById("zvolenyKraj").innerHTML = kraj;
@@ -110,7 +108,7 @@ function nactiOborButton() {
 
 	document.getElementById("obor").innerHTML = text;
 
-	$('#obor a').click(function(){
+	$('#obor a').click(function(event){
 		event.preventDefault();
 		obor = $(this).text();
 		document.getElementById("zvolenyObor").innerHTML = obor;
@@ -149,7 +147,7 @@ function nactiSkolaButton() {
 
 	document.getElementById("skola").innerHTML = text;
 
-	$('#skola a').click(function(){
+	$('#skola a').click(function(event){
 		event.preventDefault();
 		skola = $(this).text();
 		document.getElementById("zvolenaSkola").innerHTML = skola;
