@@ -1,14 +1,19 @@
-title: "Co se na poslední chvíli doučit? Podívejte se, jak dopadly státní maturity na vaší škole loni"
-perex: ""
-published: "25. dubna 2018"
+title: "Učíte se na maturitu? Data prozradí, od které zkoušky se na vaší škole nejčastěji vyhazuje"
+perex: "Zkoušku z matematiky každoročně nezvládne pětina, na některých učebních oborech i polovina maturantů. Za pět let státních maturit se podíl neúspěšných téměř nezměnil."
+published: "30. dubna 2018"
 coverimg: https://dev.datarozhlas.cz/maturity-2018/images/flickrnda.jpg
-coverimg_note: ""
+coverimg_note: "Foto <a href='https://www.flickr.com/photos/tomfbh/171221712/in/photolist-g8yfu-9i1Dc1-23iDjDQ-5d4we-2RcEL-Badpy-cP3UA-jDp1m-qc293N-r8WK61-fZcrp-78HdFm-7EjrEh-g8y9Z-5tm1wP-qRAYXR-jDps6-2UN3v-M3sWE-898NTe-9zrTwZ-pVRbFF-qp65co-FhsQVJ-24qyi5-pDAjMe-24Ub82M-TthpCb-4XC9u4-J6Zj79-T8agGd-TthoVE-TthpyJ-GmYV9v-Stm2Ez-T8agqG-fcBto-7ktnvv-6tjjRP-6MDH78-25ziWyc-eBWbNx-G6kpF7-cEJya3-5gYuK7-ceLocU-317AA-r8WNq7-g8yc4-wUizi/'>Tom</a> | Flickr (CC BY-NC 2.0)"
 styles: []
-libraries: [jquery, "https://d3js.org/d3-dsv.v1.min.js", "https://d3js.org/d3-fetch.v1.min.js"]
+libraries: [jquery, highcharts, "https://d3js.org/d3-dsv.v1.min.js", "https://d3js.org/d3-fetch.v1.min.js"]
 options: [] #wide, noheader (, nopic)
 ---
 
+Ve středu začínají na středních školách maturity. Všichni studenti mají společné státní maturity – povinnou češtinu a volitelný druhý předmět. U něj si můžou vybrat mezi matematikou, angličtinou, němčinou, francouzštinou, ruštinou a španělštinou.
+
+Podívejte se, jak dopadly loňské maturity na všech českých středních školách.
+
 <wide>
+
 <h3>Vyberte školu</h3>
 
 <div class="vopicikoule">
@@ -64,4 +69,38 @@ _Sloupec_ NEUSPĚLI _říká, kolik studentů zkoušku konalo a kolik ji nezvlá
 
 _Zdroj dat: [Cermat 2017](https://vysledky.cermat.cz/data/Default.aspx)_
 
-</div></wide>
+</div>
+
+</wide>
+
+## „Je to trochu nespravedlivé“
+
+Data za všechny české školy pak odhalují řadu trendů. Například fakt, že se se státní maturitou potýkají hlavně odborné školy a učební obory. Zatímco na gymnáziích loni například zkoušku z matematiky nezvládly 3 procenta maturantů, na technických oborech neuspělo 25 procent a na humanitních, ekonomických, zdravotnických a zemědělských školách dokonce 34 procent studentů.
+
+Existují ovšem výjimky. Například střední odborné učiliště v Novém Strašecí: v roce 2013, kdy se státní maturity konaly poprvé, matematiku nezvládlo 12 ze 17 maturantů. Loni uspěli všichni.
+
+„Přijali jsme celou řadu interních opatření, například změny hodinových dotací, akcentovali jsme také mezipředmětové vztahy,“ vysvětluje zlepšení ředitel učiliště Jan Nechutný. Vedle toho, že studentům nástavbových oborů přibyly hodiny matematiky, jim škola nabízí doučování a snaží se jim dodat sebedůvěru.
+
+„Hlavní příčina úspěchu je ale motivace žáků, na té jsme hodně pracovali. Motivace žáků je klíčová,“ tvrdí ředitel. Jedním dechem ale dodává, že ne vždy uspěje. „Jednak tam byla motivace pozitivní, ale bohužel jsme museli sáhnout i k motivaci negativní. Se žáky, kteří maturitu spíš udělat nechtěli, než že by na ni neměli, jsme se museli rozloučit.“
+
+„Upřímně řečeno, ono je to trochu nespravedlivé,“ stěžuje si Nechutný. „Říká se, že dvouletá nástavba má špatné výsledky. Neříkám, že nemá. Ale když se podíváte na strukturu hodinové dotace a srovnáte ji třeba s gymnázii, uvidíte propast: na gymnáziích mají jednak daleko větší dotaci předmětů, ze kterých maturují, jednak studují čtyři roky. Naši studenti pouze dva roky a kromě toho, že maturují ze všeobecně vzdělávacích předmětů, mají ještě praktickou část maturity a odborné předměty, kvůli kterým si šli to maturitní studium udělat. Takže mi přijde, že podmínky nejsou rovné.“
+
+## Matematika, otloukánek státních maturit
+
+Špatné výsledky testů z matematiky navíc dělají z předmětu otloukánka. Vybírá si ji stále méně studentů: před pěti lety z ní maturovalo 42 procent studentů, loni to bylo jen 22 procent. Mezi volitelnými předměty je proto stále dominantnější angličtina, kterou si loni vybralo jako svůj druhý předmět 76 procent studentů.
+
+I tady je vidět propast mezi gymnázii a odbornými školami. U gymnázií je podíl matematiky i angličtiny dlouhodobě stabilní – poměrně vysoká úspěšnost znamená, že není třeba měnit zaběhnutý režim. Zato na technických a ještě víc humanitních odborných školách je patrný úprk od matematiky k angličtině.
+
+<h3>Jak se změnila volba druhého předmětu mezi roky 2013 a 2017?</h3>
+
+<wide>
+
+<div style="max-width: 100%; overflow: hidden; display: block;">
+  <div class="chart small" id="gymnazia"></div>
+  <div class="chart small" id="technicke"></div>
+  <div class="chart small" id="ostatni"></div>
+</div>
+
+</wide>
+
+Klesá také popularita ostatních jazyků. Před pěti lety si například němčinu vybíral na zdravotnických, pedagogických a hotelových odborných školách každý desátý student. Dnes je to každý třicátý.

@@ -219,3 +219,252 @@ function makeTableHTML(myArray) {
 function onlyUnique(value, index, self) {
 	return self.indexOf(value) === index;
 }
+
+
+
+
+var gymnazia_mat = [
+  ['rok 2013', 32.5],
+  ['rok 2017', 37.6]
+]
+
+var gymnazia_aj = [
+  ['rok 2013', 65.9],
+  ['rok 2017', 59.8]
+]
+
+var gymnazia_ost = [
+  ['rok 2013', 1.6],
+  ['rok 2017', 2.6]
+]
+
+var technicke_mat = [
+  ['rok 2013', 60.5],
+  ['rok 2017', 31.7]
+]
+
+var technicke_aj = [
+  ['rok 2013', 38.1],
+  ['rok 2017', 67.9]
+]
+
+var technicke_ost = [
+  ['rok 2013', 1.4],
+  ['rok 2017', 0.4]
+]
+
+var ostatni_mat = [
+  ['rok 2013', 33.0],
+  ['rok 2017', 10.5]
+]
+
+var ostatni_aj = [
+  ['rok 2013', 57.7],
+  ['rok 2017', 86.1]
+]
+
+var ostatni_ost = [
+  ['rok 2013', 9.3],
+  ['rok 2017', 3.3]
+]
+
+var colors = ['#ECA038', '#A38456', '#EA614A', '#008836', '#20649B', '#6B96CA', '#A87A93', '#D19C95'];
+
+$(function () {
+    $('#gymnazia').highcharts({
+
+    chart: {
+        type: 'line'
+    },
+
+    title: {
+        text: 'Gymnázia'
+    },
+
+    subtitle: {
+        text: ''
+    },
+
+    xAxis: {
+        type: 'category',
+        categories: ['rok 2013', 'rok 2017']
+    },
+
+    yAxis: {
+        title: {
+            text: 'Podíl maturantů'
+        },
+        labels: {
+            format: '{value} %'
+        },
+        max: 100
+    },
+
+    tooltip: {
+        pointFormat: '<span style="color:{series.color}">{series.name}</span>: předmět si zvolilo <b>{point.y} %</b> maturantů</b>'
+    },
+
+    exporting: {
+        enabled: false
+    },
+
+    credits: {
+        enabled: false
+    },
+
+    series: [{
+        name: 'Matematika',
+        data: gymnazia_mat,
+        marker: {
+            symbol: 'circle'
+        },
+        color: colors[0]
+    }, {
+        name: 'Angličtina',
+        data: gymnazia_aj,
+        marker: {
+            symbol: 'circle'
+        },
+        color: colors[2]
+    }, {
+        name: 'Jiný jazyk',
+        data: gymnazia_ost,
+        marker: {
+            symbol: 'circle'
+        },
+        color: colors[3]
+    }]
+});
+
+    $('#technicke').highcharts({
+
+    chart: {
+        type: 'line'
+    },
+
+    title: {
+        text: 'Technické SOŠ a SOU'
+    },
+
+    subtitle: {
+        text: ''
+    },
+
+    xAxis: {
+        type: 'category',
+        categories: ['rok 2013', 'rok 2017']
+    },
+
+    yAxis: {
+        title: {
+            text: ''
+        },
+        labels: {
+            enabled: false
+        },
+        max: 100
+    },
+
+    tooltip: {
+        pointFormat: '<span style="color:{series.color}">{series.name}</span>: předmět si zvolilo <b>{point.y} %</b> maturantů</b>'
+    },
+
+    exporting: {
+        enabled: false
+    },
+
+    credits: {
+        enabled: false
+    },
+
+    series: [{
+        name: 'Matematika',
+        data: technicke_mat,
+        marker: {
+            symbol: 'circle'
+        },
+        color: colors[0]
+    }, {
+        name: 'Angličtina',
+        data: technicke_aj,
+        marker: {
+            symbol: 'circle'
+        },
+        color: colors[2]
+    }, {
+        name: 'Jiný jazyk',
+        data: technicke_ost,
+        marker: {
+            symbol: 'circle'
+        },
+        color: colors[3]
+    }]
+});
+
+    $('#ostatni').highcharts({
+
+    chart: {
+        type: 'line'
+    },
+
+    title: {
+        text: 'Ostatní SOŠ a SOU'
+    },
+
+    subtitle: {
+        text: ''
+    },
+
+    xAxis: {
+        type: 'category',
+        categories: ['rok 2013', 'rok 2017']
+    },
+
+    yAxis: {
+        title: {
+            text: ''
+        },
+        labels: {
+            enabled: false
+        },
+        max: 100
+    },
+
+    tooltip: {
+        pointFormat: '<span style="color:{series.color}">{series.name}</span>: předmět si zvolilo <b>{point.y} %</b> maturantů</b>'
+    },
+
+    exporting: {
+        enabled: false
+    },
+
+    credits: {
+        href : 'https://vysledky.cermat.cz/data/Default.aspx',
+        text : 'Zdroj: Cermat'
+    },
+
+    series: [{
+        name: 'Matematika',
+        data: ostatni_mat,
+        marker: {
+            symbol: 'circle'
+        },
+        color: colors[0]
+    }, {
+        name: 'Angličtina',
+        data: ostatni_aj,
+        marker: {
+            symbol: 'circle'
+        },
+        color: colors[2]
+    }, {
+        name: 'Jiný jazyk',
+        data: ostatni_ost,
+        marker: {
+            symbol: 'circle'
+        },
+        color: colors[3]
+    }]
+});
+
+});
