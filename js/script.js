@@ -224,48 +224,48 @@ function onlyUnique(value, index, self) {
 
 
 var gymnazia_mat = [
-  ['rok 2013', 32.5],
-  ['rok 2017', 37.6]
+  ['rok 2013', 37.6],
+  ['rok 2017', 33.6]
 ]
 
 var gymnazia_aj = [
-  ['rok 2013', 65.9],
-  ['rok 2017', 59.8]
+  ['rok 2013', 59.0],
+  ['rok 2017', 64.1]
 ]
 
 var gymnazia_ost = [
-  ['rok 2013', 1.6],
-  ['rok 2017', 2.6]
+  ['rok 2013', 3.4],
+  ['rok 2017', 2.3]
 ]
 
 var technicke_mat = [
-  ['rok 2013', 60.5],
-  ['rok 2017', 31.7]
+  ['rok 2013', 64.9],
+  ['rok 2017', 37.1]
 ]
 
 var technicke_aj = [
-  ['rok 2013', 38.1],
-  ['rok 2017', 67.9]
+  ['rok 2013', 33.3],
+  ['rok 2017', 62.5]
 ]
 
 var technicke_ost = [
-  ['rok 2013', 1.4],
+  ['rok 2013', 1.8],
   ['rok 2017', 0.4]
 ]
 
 var ostatni_mat = [
-  ['rok 2013', 33.0],
-  ['rok 2017', 10.5]
+  ['rok 2013', 28.0],
+  ['rok 2017', 10.4]
 ]
 
 var ostatni_aj = [
-  ['rok 2013', 57.7],
-  ['rok 2017', 86.1]
+  ['rok 2013', 59.5],
+  ['rok 2017', 84.5]
 ]
 
 var ostatni_ost = [
-  ['rok 2013', 9.3],
-  ['rok 2017', 3.3]
+  ['rok 2013', 12.5],
+  ['rok 2017', 5.1]
 ]
 
 var colors = ['#ECA038', '#A38456', '#EA614A', '#008836', '#20649B', '#6B96CA', '#A87A93', '#D19C95'];

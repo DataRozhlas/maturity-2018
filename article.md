@@ -75,7 +75,7 @@ _Zdroj dat: [Cermat 2017](https://vysledky.cermat.cz/data/Default.aspx)_
 
 ## „Je to trochu nespravedlivé“
 
-Data za všechny české školy pak odhalují řadu trendů. Například fakt, že se se státní maturitou potýkají hlavně odborné školy a učební obory. Zatímco na gymnáziích loni například zkoušku z matematiky nezvládly 3 procenta maturantů, na technických oborech neuspělo 25 procent a na humanitních, ekonomických, zdravotnických a zemědělských školách dokonce 34 procent studentů.
+Data za všechny české školy pak odhalují řadu trendů. Například fakt, že se se státní maturitou potýkají hlavně odborné školy a učební obory. Zatímco na gymnáziích loni například zkoušku z matematiky nezvládly 4 procenta maturantů, na technických oborech neuspělo 22 procent, a na humanitních, ekonomických, zdravotnických a zemědělských školách dokonce 41 procent studentů.
 
 Existují ovšem výjimky. Například střední odborné učiliště v Novém Strašecí: v roce 2013, kdy se státní maturity konaly poprvé, matematiku nezvládlo 12 ze 17 maturantů. Loni uspěli všichni.
 
@@ -87,7 +87,7 @@ Existují ovšem výjimky. Například střední odborné učiliště v Novém S
 
 ## Matematika, otloukánek státních maturit
 
-Špatné výsledky testů z matematiky navíc dělají z předmětu otloukánka. Vybírá si ji stále méně studentů: před pěti lety z ní maturovalo 42 procent studentů, loni to bylo jen 22 procent. Mezi volitelnými předměty je proto stále dominantnější angličtina, kterou si loni vybralo jako svůj druhý předmět 76 procent studentů.
+Špatné výsledky testů z matematiky navíc dělají z předmětu otloukánka. Vybírá si ji stále méně studentů: před pěti lety z ní maturovalo 39 procent studentů, loni to bylo jen 24 procent. Mezi volitelnými předměty je proto stále dominantnější angličtina, kterou si loni vybralo jako svůj druhý předmět 73 procent studentů.
 
 I tady je vidět propast mezi gymnázii a odbornými školami. U gymnázií je podíl matematiky i angličtiny dlouhodobě stabilní – poměrně vysoká úspěšnost znamená, že není třeba měnit zaběhnutý režim. Zato na technických a ještě víc humanitních odborných školách je patrný úprk od matematiky k angličtině.
 
@@ -103,4 +103,4 @@ I tady je vidět propast mezi gymnázii a odbornými školami. U gymnázií je p
 
 </wide>
 
-Klesá také popularita ostatních jazyků. Před pěti lety si například němčinu vybíral na zdravotnických, pedagogických a hotelových odborných školách každý desátý student. Dnes je to každý třicátý.
+Klesá také popularita ostatních jazyků. Před pěti lety si například němčinu vybíral na zdravotnických, pedagogických a hotelových odborných školách každý třináctý student. Dnes je to každý třiatřicátý.
