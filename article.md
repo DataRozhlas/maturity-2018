@@ -58,7 +58,7 @@ Podívejte se, jak dopadly loňské maturity na všech českých středních šk
 
 <div id="tabulka"></div>
 
-&nbsp;<div id="legenda" style="visibility: hidden;"><img src="https://dev.datarozhlas.cz/maturity-2018/images/legenda-small.png" style="max-width: 100%; float: left; margin-right: 20px">
+&nbsp;<div id="legenda"><img src="https://dev.datarozhlas.cz/maturity-2018/images/legenda-small.png" style="max-width: 100%; float: left; margin-right: 20px">
 _Percentil udává úspěšnost mezi všemi studenty, kteří dělali stejný test._ PRŮMĚRNÝ PERCENTIL _podobně říká, jak úspěšní byli studenti dané školy v porovnání se studenty jiných škol. Číslo za percentilem udává rozptyl mezi studenty, kteří zkoušku dělali._
 
 _V rámci státních maturit je povinná pouze zkouška z češtiny a jednoho dalšího předmětu: na výběr je matematika, angličtina, němčina, francouzština, španělština a ruština._ ZVOLILO _ukazuje, jaká část studentů si vybrala konkrétní předmět. Právě podíl studentů, kteří si předmět vybrali, znemožňuje jednoduché srovnání škol: u srovnatelně kvalitních škol bude mít pravděpodobně lepší výsledek ta, kde se pro zkoušku rozhodne menší část talentovanějších a lépe připravených studentů._
